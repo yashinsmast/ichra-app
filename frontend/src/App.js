@@ -1,21 +1,25 @@
 import React from 'react';
 import UploadForm from './components/UploadForm';
+import logo from './logo.svg';
+import uploadGraphic from './assets/upload.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="bg-[#0d0d0d] text-white min-h-screen font-sans">
-      <header className="text-center py-24 bg-gradient-to-b from-black via-[#111111] to-[#1a1a1a] shadow-lg">
-        <h1 className="text-6xl font-extrabold tracking-tight drop-shadow-xl">
-          ICHRA <span className="text-blue-500">Quote</span> Portal
+    <div className="bg-gray-50 text-gray-900 min-h-screen font-sans flex flex-col items-center">
+      <header className="w-full flex flex-col items-center text-center py-20 bg-gradient-to-b from-white via-gray-100 to-gray-200 shadow">
+        <img src={logo} alt="Portal logo" className="w-24 h-24 mb-6" />
+        <h1 className="text-7xl font-semibold tracking-tight">
+          ICHRA <span className="text-black">Quote</span> Portal
         </h1>
-        <p className="mt-6 text-2xl text-gray-400 font-light">A bold, premium insurance experience</p>
+        <p className="mt-6 text-xl text-gray-500">A streamlined, next‑gen insurance experience</p>
       </header>
-      <main className="w-full flex justify-center items-center px-6 pt-20 pb-28 min-h-[70vh]">
+      <main className="flex flex-col items-center justify-center flex-grow w-full px-6 pt-12 pb-24">
+        <img src={uploadGraphic} alt="Upload illustration" className="w-40 h-40 mb-10 opacity-70" />
         <UploadForm />
       </main>
-      <footer className="text-center py-12 text-sm text-gray-600 border-t border-gray-800">
-        &copy; 2025 Insurance Masters. Designed with elegance and precision.
+      <footer className="w-full text-center py-12 text-sm text-gray-500 border-t border-gray-200">
+        &copy; 2025 Insurance Masters. Crafted with precision.
       </footer>
     </div>
   );
