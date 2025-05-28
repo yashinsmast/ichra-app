@@ -1,0 +1,19 @@
+{
+    "name": "ichra-backend",
+    "version": "1.0.0",
+    "description": "Backend for ICHRA quoting app",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "axios": "^1.9.0",
+        "cors": "^2.8.5",
+        "csv-parser": "^3.2.0",
+        "express": "^4.21.2",
+        "multer": "^1.4.4"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
